@@ -196,9 +196,9 @@ Partial Class Stock
         '
         'btnAgregarCategoria
         '
-        Me.btnAgregarCategoria.Location = New System.Drawing.Point(288, 161)
+        Me.btnAgregarCategoria.Location = New System.Drawing.Point(271, 178)
         Me.btnAgregarCategoria.Name = "btnAgregarCategoria"
-        Me.btnAgregarCategoria.Size = New System.Drawing.Size(75, 45)
+        Me.btnAgregarCategoria.Size = New System.Drawing.Size(110, 45)
         Me.btnAgregarCategoria.TabIndex = 20
         Me.btnAgregarCategoria.Text = "Crear Nueva Categoría"
         Me.btnAgregarCategoria.UseVisualStyleBackColor = True

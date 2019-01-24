@@ -197,6 +197,5 @@ Module MProductos
             End Using
             MsgBox("Usuario Registrado", vbInformation, "Exito")
         End If
-
     End Sub
 End Module
