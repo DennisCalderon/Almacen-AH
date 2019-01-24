@@ -57,8 +57,8 @@ Partial Class Principal
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(48, 20)
-        Me.ToolStripMenuItem1.Text = "Stock"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(73, 20)
+        Me.ToolStripMenuItem1.Text = "Productos"
         '
         'IngresosToolStripMenuItem
         '

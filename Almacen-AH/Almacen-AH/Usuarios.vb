@@ -88,6 +88,16 @@
     Private Sub btnNuevo_Click(sender As Object, e As EventArgs) Handles btnNuevo.Click
         tipoguardado = 1
         txtID.Text = ""
+
+        txtCuenta.Text = ""
+        txtPass.Text = ""
+        txtDNI.Text = ""
+        txtNombres.Text = ""
+        txtApellidos.Text = ""
+        txtTelefono.Text = ""
+        txtCorreo.Text = ""
+        txtDirecc.Text = ""
+        txtObs.Text = ""
         botones(True)
 
         btnEditar.Enabled = False

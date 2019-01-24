@@ -172,6 +172,7 @@ Module MDataBase
 
 
     Public Sub Guardarusuario(ByVal id As Integer, ByVal tipoUser As String, ByVal cuenta As String, ByVal pass As String, ByVal dni As Integer, ByVal nombres As String, ByVal apellidos As String, ByVal telefono As String, ByVal correo As String, ByVal direccion As String, ByVal obs As String, ByVal tipoGuardado As Integer)
+
         Dim Idtipo As Integer, iden As Integer
         MDataBase.ObtenerIdTipo(tipoUser, Idtipo)
         Dim sql As String = ""
@@ -225,7 +226,5 @@ Module MDataBase
                 MsgBox("Usuario Registrado", vbInformation, "Exito")
             End If
         End If
-
-
     End Sub
 End Module
