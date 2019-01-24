@@ -99,4 +99,9 @@
     Private Sub txtExistencias_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtExistencias.KeyPress
         e.Handled = Not IsNumeric(e.KeyChar) And Not Char.IsControl(e.KeyChar) ' solo permite números
     End Sub
+
+    Private Sub btnAgregarCategoria_Click(sender As Object, e As EventArgs) Handles btnAgregarCategoria.Click
+        Dim form As New Categorias
+        form.ShowDialog()
+    End Sub
 End Class

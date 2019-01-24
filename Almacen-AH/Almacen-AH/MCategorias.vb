@@ -103,4 +103,18 @@ Module MCategorias
             MsgBox("Usuario Registrado", vbInformation, "Exito")
         End If
     End Sub
+    Public Sub ObtenerTodasCategoriasLB(ByRef lbCat As ListBox)
+        Dim sql = "SELECT * from categoriaproducto"
+        Using con As New MySqlConnection(cadena_conexion)
+
+            Dim command As New MySqlCommand(sql, con)
+            Dim da As New MySqlDataAdapter
+            da.SelectCommand = command
+            Dim ds As New DataSet
+            ds.Tables.Add("categoriaproducto")
+            da.Fill(ds.Tables("categoriaproducto"))
+            lbCat.DataSource = ds.Tables("categoriaproducto")
+            lbCat.DisplayMember = "NombreCatProd"
+        End Using
+    End Sub
 End Module
